@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Conjugaison | JS</title>
+        <link href="favicon.ico" rel="icon" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="conjugaison.css">
+        <script type="text/javascript" src="conjugaison.js"></script>
+
+    
+    </head>
+    <body>
+
+        <div id="gauch">
+
+                <h3>CONJUGAISON VERBES DU 1ER GROUPE</h3>
+                <hr><br>
+                <p>
+                    Après avoir choisi un verbe et un temps, cliquez sur <b>"Conjuguer"</b>
+                </p>
+                <br><br>
+                <p>
+                    <div id="verb">
+                        
+                        <label>&nbsp;<b>Verbe à conjuguer</b>&nbsp;</label>
+                        <input id="verbc" type="text" value="" placeholder="Ex: Manger" autocomplete="on">
+                     
+                     </div>
+                     <br><br>
+                     <div id="tps">
+                        
+                        <label>
+                             &nbsp;<b>Temps</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            
+                        </label>
+                        <select id="tpsc" required="true" autocomplete="off">
+                                <option>Choisissez le temps (Ex: Present)</option>
+                                <option value="Present">Present</option>
+                                <option value="Futur simple">Futur simple</option>
+                                <option value="Passee simple">Passee simple</option>
+                                <option value="Tous les temps">Tous les temps</option>
+                            </select>
+                     </div>
+                     <br><br>
+                     <input type="button" value="Conjuguer" onclick="conjuguer()">
+                     <a href="conjugaison.html"><input type="button" name="reset" value="Réinitialiser"></a>
+                </p>
+                
+        </div>
+        <div id="droit">
+            
+            <div id="rp1"></div><br>
+            <div id="rp2"></div><br>
+            <div id="rp3"></div><br>
+        
+        </div>
+    
+    </body>
+
+</html>

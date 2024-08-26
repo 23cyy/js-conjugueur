@@ -1,0 +1,110 @@
+/*feuille_style - conjugaison.html*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+body{
+    font-family: 'Nunito', 'verdana', 'Georgia', sans-serif; 
+}
+
+h3{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+p{
+    margin: 3px;
+}
+
+#gauch h3, #gauch p{
+    text-align: center;
+}
+
+#gauch, #droit{
+    display: inline-block;
+    width: 600px;
+    height: 650px;
+    padding: 13px;
+    border-radius: 15px;
+}
+
+#gauch{
+    float: left;
+    margin: 50px 0px 50px 125px;
+    background-color: beige;
+    border: 1px solid beige;
+}
+
+#droit{
+    margin: 50px 0px;
+    color: #fff; 
+    background-color: #090;
+    border: 1px solid #090 ;
+}
+
+label{
+    display: inline-block;
+}
+
+#verb, #tps{
+    display: inline-block;
+    background-color: rgba(230, 230, 230, 1.0);
+    padding: 0px;
+}
+
+#verbc, #tpsc{
+    border-top: 1px solid beige;
+    border-right: 1px solid beige;
+    border-bottom: 1px solid beige;
+    border-left: 3px solid rgba(200, 200, 200, 1.0);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#verbc{
+    width: 400px;
+    height: 35px;
+    padding: 5px 5px;
+    display: inline-block;
+}
+
+#tpsc{
+    width: 405px;
+    height: 45px;
+    padding: 10px 25px 10px 10px;
+}
+
+input[type="button"]{
+    width: 250px;
+    height: 40px;gauch
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+}
+
+input[value="Conjuguer"]{
+    background-color: rgba(0, 0, 200, 1.0);
+    border: 3px solid rgba(0, 0, 200, 1.0);
+}
+
+input[value="Réinitialiser"]{
+    background-color: rgba(200, 0, 0, 1.0);
+    border: 3px solid rgba(200, 0, 0, 1.0);
+}
+
+input[value="Conjuguer"]:hover{
+    background-color: blue;
+    border: 3px solid blue;
+}
+
+input[value="Réinitialiser"]:hover{
+    background-color: red;
+    border: 3px solid red;
+}
+
+#rp1, #rp2, #rp3{
+    padding: 5px 5px;
+    border: 1px solid #fff;
+    display: block;
+    width:80%;
+    margin:0px auto;
+    font-size: 15px;
+}
+  
