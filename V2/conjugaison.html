@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conjugaison de Verbes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="conjugaison.css">
+    <script type="text/javascript" src="conjugaison.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="form-section">
+            <h3>Conjugaison des verbes</h3>
+            <p>Saisissez un verbe et choisissez un temps. Cliquez sur <b>"Conjuguer"</b> pour voir la conjugaison.</p>
+            <div class="form-group">
+                <label for="verbc"><b>Verbe à conjuguer :</b></label>
+                <input id="verbc" type="text" placeholder="Exemple : Chasser | Finir" />
+            </div>
+            <div class="form-group">
+                <label for="tpsc"><b>Temps :</b></label>
+                <select id="tpsc">
+                    <option value="" disabled selected>Choisissez un temps</option>
+                    <option value="Present">Présent</option>
+                    <option value="Futur">Futur simple</option>
+                    <option value="Passe">Passé simple</option>
+                    <option value="Tous les temps">Tous les temps</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="group"><b>Groupe du verbe :</b></label>
+                <select id="group">
+                    <option value="1">1er groupe</option>
+                    <option value="2">2e groupe</option>
+                </select>
+            </div>
+            <button onclick="conjuguer()">Conjuguer</button>
+            <button onclick="window.location.reload()">Réinitialiser</button>
+        </div>
+        <div id="result-section">
+            <div id="rp1"></div>
+            <div id="rp2"></div>
+            <div id="rp3"></div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2021 Conjugaison des verbes. Tous droits réservés.</p>
+    </footer>
+
+</body>
+
+</html>
