@@ -1,111 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap');
-
-body {
-    font-family: 'Nunito', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+/*feuille_style - conjugaison.html*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+body{
+    font-family: 'Nunito', 'verdana', 'Georgia', sans-serif; 
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+h3{
+    font-weight: bold;
+    font-size: 30px;
 }
 
-#form-section {
-    background: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    width: 100%;
-    margin-bottom: 20px;
+p{
+    margin: 3px;
+}
+
+#gauch h3, #gauch p{
     text-align: center;
 }
 
-h3 {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #0077cc;
+#gauch, #droit{
+    display: inline-block;
+    width: 600px;
+    height: 650px;
+    padding: 13px;
+    border-radius: 15px;
 }
 
-p {
-    font-size: 14px;
-    margin-bottom: 20px;
-    color: #666;
+#gauch{
+    float: left;
+    margin: 50px 0px 50px 125px;
+    background-color: beige;
+    border: 1px solid beige;
 }
 
-.form-group {
-    margin-bottom: 15px;
-    text-align: left;
+#droit{
+    margin: 50px 0px;
+    color: #fff; 
+    background-color: #090;
+    border: 1px solid #090 ;
 }
 
-label {
-    font-weight: 700;
-    margin-bottom: 5px;
+label{
     display: inline-block;
 }
 
-input, select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 5px;
-    font-size: 14px;
+#verb, #tps{
+    display: inline-block;
+    background-color: rgba(230, 230, 230, 1.0);
+    padding: 0px;
 }
 
-button {
-    padding: 10px 15px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    margin: 10px 5px;
-    cursor: pointer;
+#verbc, #tpsc{
+    border-top: 1px solid beige;
+    border-right: 1px solid beige;
+    border-bottom: 1px solid beige;
+    border-left: 3px solid rgba(200, 200, 200, 1.0);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
-button:hover {
-    opacity: 0.9;
+#verbc{
+    width: 400px;
+    height: 35px;
+    padding: 5px 5px;
+    display: inline-block;
 }
 
-button:first-of-type {
-    background-color: #0077cc;
-    color: #fff;
+#tpsc{
+    width: 405px;
+    height: 45px;
+    padding: 10px 25px 10px 10px;
 }
 
-button:last-of-type {
-    background-color: #e74c3c;
-    color: #fff;
-}
-
-#result-section {
-    width: 100%;
-    max-width: 500px;
-}
-
-#rp1, #rp2, #rp3 {
-    background: #0077cc;
+input[type="button"]{
+    width: 250px;
+    height: 40px;gauch
+    font-weight: bold;
     color: #fff;
     border-radius: 5px;
-    padding: 15px;
-    margin: 10px 0;
-    font-size: 14px;
-    text-align: left;
 }
 
-footer {
-    margin-top: 20px;
-    padding: 15px 0;
-    text-align: center;
-    color: #fff; /* Couleur du texte */
-    font-size: 14px;
-    font-family: 'Nunito', sans-serif;
+input[value="Conjuguer"]{
+    background-color: rgba(0, 0, 200, 1.0);
+    border: 3px solid rgba(0, 0, 200, 1.0);
 }
 
-footer p {
-    margin: 0;
+input[value="Réinitialiser"]{
+    background-color: rgba(200, 0, 0, 1.0);
+    border: 3px solid rgba(200, 0, 0, 1.0);
 }
+
+input[value="Conjuguer"]:hover{
+    background-color: blue;
+    border: 3px solid blue;
+}
+
+input[value="Réinitialiser"]:hover{
+    background-color: red;
+    border: 3px solid red;
+}
+
+#rp1, #rp2, #rp3{
+    padding: 5px 5px;
+    border: 1px solid #fff;
+    display: block;
+    width:80%;
+    margin:0px auto;
+    font-size: 15px;
+}
+  
